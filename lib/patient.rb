@@ -15,7 +15,7 @@ class Patient
 
   def patient
     Patient.all.collect do |patient|
-      appointment.patient == self
+      appointment.doctor == self
     end
   end
 
